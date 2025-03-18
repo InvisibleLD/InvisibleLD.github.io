@@ -1,0 +1,80 @@
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    margin-top: 20px;
+}
+
+/*image grid layout from tutorial https://www.w3schools.com/howto/howto_js_image_grid.asp*/
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+}
+
+.column {
+    flex: 25%;
+    padding: 4px;
+}
+
+.column img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover; /* let images fill with original ratio*/
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 5px;
+}
+
+.column img:hover {
+    transform: scale(1.1);
+}
+/*from lightbox tutorial https://www.w3schools.com/howto/howto_js_lightbox.asp*/
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 5px;
+    object-fit: contain;/* Fixes stretched images in lightbox */
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+.caption {
+    color: white;
+    margin-top: 10px;
+}
