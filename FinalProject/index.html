@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Artwork Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="home">
+    <h1>Hi, I'm Ganlin Du</h1>
+    <p>I’m a 3D game environment artist</p>
+    <button onclick="enterGallery()">Enter Gallery</button>
+  </div>
+
+  <div id="gallery">
+    <div class="gallery-container" id="imageGrid"></div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" src="" alt="Expanded Image">
+    <div id="lightbox-caption" class="caption"></div>
+  </div>
+
+  <canvas id="particleCanvas"></canvas>
+  <div id="reveal"></div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
