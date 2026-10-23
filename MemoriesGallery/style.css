@@ -16,11 +16,6 @@
 /* Keep multi-city captions within the mobile viewport. */
 .gallery-title{max-width:90%}.gallery-title p{line-height:1.6}
 
-/* Minimal entry: choose a device, then explore without upload prompts. */
-#setup{text-align:center;padding:36px 28px}
-#setup h2{font:30px Georgia,serif;margin:4px 0 24px}
-#setup button{min-height:52px;font-size:14px;letter-spacing:1px}
-#setup #notice{margin-bottom:0;text-align:left}
 /* Blend the image's inverted white background into the surrounding scene. */
 .province-map{isolation:auto}
 .province-map>img{mix-blend-mode:screen}
@@ -32,3 +27,8 @@
 .globe .asia.active{background:transparent;box-shadow:none}
 .map-light{display:block;width:10px;height:10px;border-radius:50%;background:#f4ffe9;box-shadow:0 0 10px #efffd9,0 0 28px #d8f8bdaa}
 .asia.active .map-light{box-shadow:0 0 16px #fff,0 0 36px #e6ffc1}
+
+/* The intro itself is the start screen. Motion permission uses its single button. */
+.enter{cursor:pointer;color:#d7e4c1;background:#adca8b0d;font-family:inherit;padding:0;flex-shrink:0}
+.enter:focus-visible{outline:2px solid #e8ffd1;outline-offset:6px}
+#notice{position:fixed;z-index:25;bottom:65px;left:8%;right:8%;max-width:620px;margin:0 auto;padding:15px 18px;border:1px solid #526447;border-radius:8px;background:#101b18f2;color:#dfe7d5;font-size:12px;line-height:1.6;text-align:center}

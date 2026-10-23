@@ -4,14 +4,14 @@ A mobile travel gallery made with HTML, CSS, and JavaScript. No build step or pa
 
 ## Run
 
-Open this folder in Visual Studio Code. Use Live Server to open index.html, or open index.html directly for desktop preview. Use the arrow keys in desktop mode.
+Open this folder in Visual Studio Code. Use Live Server to open index.html, or open index.html directly for desktop preview. Mouse movement and arrow keys work automatically on a computer. There is no device-selection screen.
 
-On a phone, open the published HTTPS website and select Explore on Phone. Hold the phone comfortably during calibration. HTTP addresses on a local network generally cannot access motion sensors.
+On a phone, open the published HTTPS website. Motion is detected from actual sensor readings. If your browser requires permission, tap Enter Gallery once to allow motion and enter the world. Hold the phone comfortably during calibration. HTTP addresses on a local network generally cannot access motion sensors.
 
 ## Controls
 
 - Tilt the phone to move the light.
-- Stay on Enter Gallery for 1 second to enter the world.
+- Stay on Enter Gallery for 1 second to enter the world, or tap it once when motion permission is required.
 - Stay on Asia for 1 second to enter China.
 - Stay on a glowing point on the map, for 1 second to enter its album.
 - Move over the photo wall to erase the dark cover. Revealed areas remain visible during this visit.
