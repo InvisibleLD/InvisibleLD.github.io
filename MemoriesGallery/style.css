@@ -43,3 +43,11 @@
 .city-point i{width:9px;height:9px;box-shadow:0 0 10px #efffe3,0 0 22px #d8f8bdaa}
 @media(max-width:600px){.jiangxi-layout{inset:250px 0 75px}.jiangxi-map{width:min(94vw,calc(100dvh - 340px))}}
 @media(max-height:550px){.jiangxi-layout{inset:165px 0 45px}.jiangxi-map{width:min(55vw,calc(100dvh - 215px))}}
+
+/* Personal response above the China map, with space for mobile text wrapping. */
+.china-title{right:8%}
+.china-title p{max-width:680px;font-size:13px;letter-spacing:.5px;line-height:1.7}
+.sensing-layout{top:275px}
+.sensing-layout .province-map{width:min(88vw,calc((100dvh - 370px)*1.35),760px)}
+@media(max-width:600px){.china-title h2{font-size:26px;line-height:1.2}.china-title p{font-size:12px;line-height:1.6}.sensing-layout{top:295px}.sensing-layout .province-map{width:min(94vw,calc((100dvh - 395px)*1.35))}}
+@media(max-height:550px){.china-title h2{font-size:24px;margin:6px 0}.china-title p{font-size:11px;line-height:1.5}.sensing-layout{top:205px}.sensing-layout .province-map{width:min(58vw,calc((100dvh - 270px)*1.35))}}
