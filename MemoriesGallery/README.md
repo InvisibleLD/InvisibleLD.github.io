@@ -16,7 +16,7 @@ On a phone, open the published HTTPS website. Motion is detected from actual sen
 - Stay on a glowing point on the map, for 1 second to enter its album.
 - Move over the photo wall to erase the dark cover. Revealed areas remain visible during this visit.
 - Move near the left or right screen edge to pan through more photos.
-- Stay at the top center for 1 second to return to China.
+- Stay at the top center for 1 second to return to the previous page.
 
 The four destinations are Jiangxi, Anhui, Shaanxi, and Guangdong. Returning to an album resets its cover. Portrait orientation works best. Returning from another app recalibrates the neutral phone position.
 
@@ -78,4 +78,4 @@ There is no tested universal photo-count limit. File size, image dimensions, pho
 
 ## Jiangxi city map
 
-Selecting Jiangxi on the China map now opens a local city map with five lights: Nanchang, Shangrao, Wuyuan, Pingxiang, and Jingdezhen. Stay on a light for 1 second to open only that destination's photos. Wuyuan is a county within Shangrao, presented as a separate travel stop. Map markers use approximate positions on the supplied reference. The reference is displayed in grayscale, with English labels covering the original image labels. At the top of the Jiangxi map or any gallery, stay for 1 second to return directly to China. Other province galleries retain their existing behavior.
+Selecting Jiangxi on the China map now opens a local city map with five lights: Nanchang, Shangrao, Wuyuan, Pingxiang, and Jingdezhen. Stay on a light for 1 second to open only that destination's photos. Wuyuan is a county within Shangrao, presented as a separate travel stop. Map markers use approximate positions on the supplied reference. The reference is displayed in grayscale, with English labels covering the original image labels. At the top, stay for 1 second to go back one page: Jiangxi city galleries return to the Jiangxi map, which returns to China. Other province galleries return to China. Move out of the return zone before selecting it again. Other province galleries retain their existing behavior.
