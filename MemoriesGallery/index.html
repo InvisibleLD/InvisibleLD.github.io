@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#080d10">
+  <title>Memories Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><span class="brand">memories<small>gallery</small></span><span id="mode">SUMMER / CHINA</span></header>
+  <main id="stage"></main>
+  <footer><span id="hint">Tilt to move - hold for 2 seconds to select</span><span id="step">01 - 04</span></footer>
+  <div id="orb"><svg viewBox="0 0 64 64"><circle cx="32" cy="32" r="28"/></svg><i></i></div>
+  <dialog id="setup">
+    <p class="eyebrow">BEFORE THE JOURNEY</p>
+    <h2>Let your memories find the light.</h2>
+    <p>Hold your phone comfortably, then enable motion. Gently tilt to move the light. Stay on a destination for 2 seconds to enter.</p>
+    <p id="notice">On a computer, use your mouse or arrow keys to explore.</p>
+    <label>Add photos for this session (optional)
+      <select id="destination">
+        <option value="jiangxi">Jiangxi - Nanchang / Shangrao / Wuyuan / Pingxiang / Jingdezhen</option>
+        <option value="anhui">Anhui - Huangshan</option>
+        <option value="shaanxi">Shaanxi - Weinan / Shangluo</option>
+        <option value="guangdong">Guangdong - Shenzhen / Guangzhou</option>
+      </select>
+      <input id="photos" type="file" accept="image/*" multiple>
+    </label>
+    <p id="imports">Permanent photos are configured in photos.js. Empty albums show sample landscapes. Session uploads stay on this device.</p>
+    <button id="start">Enable motion - begin exploring</button>
+    <button id="preview" class="secondary">Mouse / keyboard preview</button>
+  </dialog>
+  <script src="photos.js"></script>
+  <script src="sketch.js"></script>
+</body>
+</html>
