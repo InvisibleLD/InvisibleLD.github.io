@@ -75,3 +75,7 @@ JavaScript syntax, English source strings, asset references, photo-folder layout
 ## Photo quantity and mobile performance
 
 There is no tested universal photo-count limit. File size, image dimensions, phone memory, and the width of the reveal canvas all matter. Start with around 30 resized photos and test on the intended phone before adding larger batches. The gallery defers offscreen image loading, but it is not designed as an unlimited archive. Keep original full-resolution photos outside this website and put web-sized copies here.
+
+## Jiangxi city map
+
+Selecting Jiangxi on the China map now opens a local city map with five lights: Nanchang, Shangrao, Wuyuan, Pingxiang, and Jingdezhen. Stay on a light for 1 second to open only that destination's photos. Wuyuan is a county within Shangrao, presented as a separate travel stop. Map markers use approximate positions on the supplied reference. The reference is displayed in grayscale, with English labels covering the original image labels. At the top of the Jiangxi map or any gallery, stay for 1 second to return directly to China. Other province galleries retain their existing behavior.
