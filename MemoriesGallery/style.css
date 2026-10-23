@@ -4,8 +4,6 @@
 .china-layout{position:absolute;inset:240px 0 78px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:22px}
 .province-map{position:relative;width:min(88vw,calc((100dvh - 350px)*1.35),760px);aspect-ratio:597/442;flex-shrink:0;isolation:isolate}
 .province-map>img{display:block;width:100%;height:100%;filter:grayscale(1) invert(1) brightness(.78);opacity:.8;user-select:none}
-.province-legend{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;width:min(94vw,680px)}
-.legend-item{position:relative;min-height:42px;padding:10px 13px;border-radius:25px;font-size:10px;letter-spacing:1px;gap:8px}
 @media(max-width:600px){.china-layout{inset:245px 0 80px;gap:22px}.province-map{width:min(94vw,calc((100dvh - 365px)*1.35))}.legend-item{font-size:9px;padding:10px;letter-spacing:0}footer{gap:18px}#hint{max-width:78%;line-height:1.5}.title p{max-width:84vw;line-height:1.7}}
 @media(max-height:550px){.title{top:90px}.title h2{font-size:24px;margin:6px 0}.title p{margin:6px 0}.china-layout{inset:165px 0 48px;gap:8px}.province-map{width:min(58vw,calc((100dvh - 260px)*1.35))}.legend-item{min-height:30px;padding:7px 12px}.globe{width:min(50vw,55vh);top:60%}}
 
@@ -17,3 +15,20 @@
 
 /* Keep multi-city captions within the mobile viewport. */
 .gallery-title{max-width:90%}.gallery-title p{line-height:1.6}
+
+/* Minimal entry: choose a device, then explore without upload prompts. */
+#setup{text-align:center;padding:36px 28px}
+#setup h2{font:30px Georgia,serif;margin:4px 0 24px}
+#setup button{min-height:52px;font-size:14px;letter-spacing:1px}
+#setup #notice{margin-bottom:0;text-align:left}
+/* Blend the image's inverted white background into the surrounding scene. */
+.province-map{isolation:auto}
+.province-map>img{mix-blend-mode:screen}
+.jiangxi-point{width:clamp(36px,7vw,48px);height:clamp(36px,7vw,48px);z-index:1}
+.jiangxi-point i{width:14px;height:14px;box-shadow:0 0 12px #edffe1,0 0 26px #d8f8bdaa}
+/* Every continent is named; Asia is selected through its light point. */
+.continent-labels{font:15px Arial,sans-serif;letter-spacing:1px;fill:#d5e0cf;opacity:.85;pointer-events:none}
+.globe .asia{left:69%;top:35%;width:90px;height:68px;transform:translate(-50%,-50%);flex-direction:column;gap:11px;border:0;background:transparent;box-shadow:none;font-size:14px;letter-spacing:2px}
+.globe .asia.active{background:transparent;box-shadow:none}
+.map-light{display:block;width:10px;height:10px;border-radius:50%;background:#f4ffe9;box-shadow:0 0 10px #efffd9,0 0 28px #d8f8bdaa}
+.asia.active .map-light{box-shadow:0 0 16px #fff,0 0 36px #e6ffc1}

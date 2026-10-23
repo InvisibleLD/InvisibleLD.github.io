@@ -4,19 +4,19 @@ A mobile travel gallery made with HTML, CSS, and JavaScript. No build step or pa
 
 ## Run
 
-Open this folder in Visual Studio Code. Use Live Server to open index.html, or open index.html directly for desktop preview. Use the mouse or arrow keys in desktop mode.
+Open this folder in Visual Studio Code. Use Live Server to open index.html, or open index.html directly for desktop preview. Use the arrow keys in desktop mode.
 
-On a phone, open the published HTTPS website and select Enable motion. Hold the phone comfortably during calibration. HTTP addresses on a local network generally cannot access motion sensors.
+On a phone, open the published HTTPS website and select Explore on Phone. Hold the phone comfortably during calibration. HTTP addresses on a local network generally cannot access motion sensors.
 
 ## Controls
 
 - Tilt the phone to move the light.
-- Stay on Enter Gallery for 2 seconds to enter the world.
-- Stay on Asia for 2 seconds to enter China.
-- Stay on a glowing point, or its labeled chip below the map, for 2 seconds to enter its album.
+- Stay on Enter Gallery for 1 second to enter the world.
+- Stay on Asia for 1 second to enter China.
+- Stay on a glowing point on the map, for 1 second to enter its album.
 - Move over the photo wall to erase the dark cover. Revealed areas remain visible during this visit.
 - Move near the left or right screen edge to pan through more photos.
-- Stay at the top center for 2 seconds to return to China.
+- Stay at the top center for 1 second to return to China.
 
 The four destinations are Jiangxi, Anhui, Shaanxi, and Guangdong. Returning to an album resets its cover. Portrait orientation works best. Returning from another app recalibrates the neutral phone position.
 
@@ -49,11 +49,11 @@ Repeat for the other locations. Photos appear in the order listed. Match capital
 
 The browser cannot automatically list files in a static website folder, so both steps are necessary: copy the images, then list their filenames in photos.js. No real travel photos have been supplied yet. An empty province uses clearly labeled sample landscapes. Missing configured images show a sample with a Photo not found caption after that area is revealed.
 
-The optional photo picker on the start screen adds pictures only for the current browsing session. It does not save pictures to the website or upload them. For permanent photos, use the folders and photos.js.
+The visitor interface has no photo uploads. Configure permanent travel images through photos.js.
 
 ## Map
 
-assets/china-provinces.png is the reference image supplied for this project. It is displayed in grayscale through CSS, with one light point for each of the four travel provinces. Light points follow approximate positions on this reference image. Province chips below the map provide larger selection areas on small screens. Province artwork and labels remain readable without contacting a map provider.
+assets/china-provinces.png is the reference image supplied for this project. It is displayed in grayscale through CSS, with one light point for each of the four travel provinces. Light points follow approximate positions on this reference image. Jiangxi has a larger light point for easier selection. There are no destination buttons below the map. Province artwork and labels remain readable without contacting a map provider.
 
 ## Files
 
